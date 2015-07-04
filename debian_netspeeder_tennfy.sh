@@ -33,7 +33,7 @@ fi
 nohup ~/net_speeder $INTERFACE "ip" >/dev/null 2>&1 &
 
 sed -i 's/exit\ 0/#exit\ 0/' /etc/rc.local
-echo "nohup ~/net_speeder $INTERFACE '"ip"' >/dev/null 2>&1 &" >> /etc/rc.local  
+echo 'nohup ~/net_speeder $INTERFACE "ip" >/dev/null 2>&1 &' >> /etc/rc.local  
 echo exit 0 >> /etc/rc.local
 
 echo "=========================================================================\n"
